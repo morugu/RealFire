@@ -28,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		69681793E3BE0ABB38AED19E /* Pods-RealmFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmFire/Pods-RealmFire.debug.xcconfig"; sourceTree = "<group>"; };
+		C6EAB0821AFDE01B0006D6C9 /* Realm-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Realm-Bridging-Header.h"; sourceTree = "<group>"; };
 		C6F33A731AFDD55900A575AB /* RealmFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F33A771AFDD55900A575AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6F33A781AFDD55900A575AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 				C6F33A7F1AFDD55900A575AB /* Images.xcassets */,
 				C6F33A811AFDD55900A575AB /* LaunchScreen.xib */,
 				C6F33A761AFDD55900A575AB /* Supporting Files */,
+				C6EAB0821AFDE01B0006D6C9 /* Realm-Bridging-Header.h */,
 			);
 			path = RealmFire;
 			sourceTree = "<group>";
@@ -419,6 +421,7 @@
 				INFOPLIST_FILE = RealmFire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Realm-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -430,6 +433,7 @@
 				INFOPLIST_FILE = RealmFire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT)/Realm-Bridging-Header.h";
 			};
 			name = Release;
 		};
